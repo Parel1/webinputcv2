@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV Builder</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- FORM -->
+    <div class="form-box">
+      <h1>CV Builder</h1>
+      <p>Isi data CV disini.</p>
+
+      <input type="text" id="name" placeholder="Nama Lengkap">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="phone" placeholder="Nomor HP">
+      <input type="file" id="photo" accept="image/*">
+
+      <textarea id="address" placeholder="Alamat"></textarea>
+
+      <textarea id="summary" placeholder="Tentang Diri"></textarea>
+
+      <textarea id="education" placeholder="Pendidikan"></textarea>
+
+      <textarea id="experience" placeholder="Pengalaman"></textarea>
+
+      <textarea id="skills" placeholder="Skill"></textarea>
+    </div>
+
+    <!-- PREVIEW -->
+    <div class="preview-box">
+      <img id="previewPhoto" src="" alt="Foto CV">
+      <h1 id="previewName">Nama Lengkap</h1>
+
+      <p id="previewEmail">email@example.com</p>
+      <p id="previewPhone">+62 xxxx</p>
+      
+      <p id="previewAddress">Alamat</p>
+
+      <hr>
+
+      <h2>Tentang Saya</h2>
+      <p id="previewSummary">Deskripsi diri.</p>
+
+      <h2>Pendidikan</h2>
+      <p id="previewEducation">Riwayat pendidikan.</p>
+
+      <h2>Pengalaman</h2>
+      <p id="previewExperience">Pengalaman kerja / organisasi.</p>
+
+      <h2>Skill</h2>
+      <p id="previewSkills">HTML, CSS, JavaScript</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <button id="downloadBtn">Download PDF</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  
+</body>
+</html>
